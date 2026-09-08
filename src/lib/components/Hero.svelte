@@ -1,5 +1,7 @@
 <script lang="ts">
     import { IconChevronDown } from '@tabler/icons-svelte';
+    import { Dialog  } from '@skeletonlabs/skeleton-svelte';
+	import DownloadModal from './DownloadModal.svelte';
 </script>
 
 <section class="container mx-auto px-0 md:px-16">
@@ -7,11 +9,14 @@
 
         <h3 class="h1 leading-[1]">A tool for reconnecting dispersed collections</h3>
         <p>Ọkpan brings together records of artefacts scattered across museums worldwide, reconnecting them with the communities, knowledge, and histories they were separated from.</p>
-        <button type="button" class="btn preset-filled bg-primary-800 px-32 py-16 gap-8 hover:gap-12" title="Download" aria-label="Download">
-            <p>Download</p> 
-            <IconChevronDown class="size-18 transition" stroke="1.5"/>
-        </button>
 
+        <Dialog>
+	        <Dialog.Trigger class="btn preset-filled bg-primary-800 px-32 py-16 gap-8 hover:gap-12">
+                Download
+                <IconChevronDown class="size-18 transition" stroke="1.5"/>
+            </Dialog.Trigger>
+            <DownloadModal />
+        </Dialog>
     </div>
 
 </section>

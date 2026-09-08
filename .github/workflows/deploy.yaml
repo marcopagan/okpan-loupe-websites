@@ -26,6 +26,8 @@ jobs:
         run: npm ci
 
       - name: Build static website
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: npm run build
 
       - name: Deploy to gh-pages

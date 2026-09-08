@@ -2,21 +2,21 @@
 	import FeaturesSection from '$lib/components/FeaturesSection.svelte';
 	import Hero from '$lib/components/Hero.svelte';
     import TopNav from '$lib/components/TopNav.svelte';
-	import { IconArrowUpRight } from '@tabler/icons-svelte';
+	import { IconArrowUpRight, IconMailFast } from '@tabler/icons-svelte';
 </script>
 
 
 
 <TopNav />
 
-<main class="grid grid-cols-1 mt-8 lg:mt-24">
+<main class="grid grid-cols-1 my-8 lg:my-24">
     
 
 
     <Hero />
 
 
-
+    <!-- What is it (with border) -->
     <section class="container mx-auto grid grid-cols-12 gap-16 py-24 lg:py-48 px-16">
         <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
             <h2 class="h2">What is it?</h2>
@@ -24,39 +24,67 @@
                 Ọkpan is a platform for reconnecting dispersed collections. Import artefact records from any source, enrich them with situated knowledge such as Indigenous designations, oral histories, and cultural context, and publish a unified catalogue that brings a scattered collection back together, wherever the objects themselves remain.
             </p>
         </div>
-        <img class="col-span-12 lg:col-span-7" src="/okpan/img-wrapper.png" alt="Overview of the software">
+        <div class="col-span-12 lg:col-span-7 bg-primary-500 p-32 lg:p-48 flex flex-wrap items-center justify-center rounded-lg">
+            <iframe class="rounded-xl shadow-xl aspect-video w-full h-auto" width="853" height="480" src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=9aYDBlmUxg4YmG-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!--<img class="col-span-12 lg:col-span-7" src="/okpan/intro-img.png" alt="Overview of the software">-->
+    </section>
+
+    <!-- What is it (full video) -->
+    <section class="container mx-auto grid grid-cols-12 gap-16 py-24 lg:py-48 px-16">
+        <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
+            <h2 class="h2">What is it?</h2>
+            <p class="text-surface-600">
+                Ọkpan is a platform for reconnecting dispersed collections. Import artefact records from any source, enrich them with situated knowledge such as Indigenous designations, oral histories, and cultural context, and publish a unified catalogue that brings a scattered collection back together, wherever the objects themselves remain.
+            </p>
+        </div>
+        <div class="col-span-12 lg:col-span-7 flex flex-wrap items-center justify-center rounded-lg">
+            <iframe class="rounded-xl shadow-xl aspect-video w-full h-auto" width="853" height="480" src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=9aYDBlmUxg4YmG-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!--<img class="col-span-12 lg:col-span-7" src="/okpan/intro-img.png" alt="Overview of the software">-->
     </section>
 
 
 
+
+
+
+    <!-- Feature -->
     <FeaturesSection />
 
 
 
 
+
+
+    <!-- About colored background (center) -->
     <section class="py-24 lg:py-120 bg-primary-100">
-        <div class="container mx-auto grid grid-cols-12 gap-16 px-16">
-        <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
+        <div class="container mx-auto gap-32 lg:gap-48 px-16 py-16 lg:py-0 flex flex-col flex-wrap items-center">
+        <div class="flex justify-center flex-col gap-16 lg:w-lg text-center">
             <h2 class="h2">About the project</h2>
-            <p class="text-surface-600">
+            <p class="text-surface-600 text-balance">
                 Vivamus eget consequat justo. Quisque hendrerit augue eu dignissim bibendum. Fusce ut est sed nibh bibendum auctor in et urna. Praesent et tincidunt elit.
             </p>
         </div>
         <div class="col-span-12 lg:col-span-7 flex flex-col md:flex-row gap-16">
-            <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-100)">
-                <img src="/okpan/card-db.svg" width="48" height="48" alt="Digital Benin logo">
-                <h4 class="font-semibold">Digital Benin</h4>
-                <p class="text-sm">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
-                <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand text-white p-16 hover:gap-12">
+            <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-200)">
+                <div class="flex flex-wrap items-center gap-16">
+                    <img src="/okpan/card-db.svg" width="48" height="48" alt="Digital Benin logo">
+                    <h3 class="h3">Digital Benin</h3>
+                </div>
+                <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
+                <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand text-white p-16 hover:gap-12 lg:w-3xs">
                     Go to the website
                     <IconArrowUpRight stroke="1.5" class="size-18" />
                 </a>
             </div>
-            <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-100)">
-                <img src="/okpan/card-loupe.svg" width="48" height="48" alt="Loupe logo">
-                <h4 class="font-semibold">Loupe</h4>
-                <p class="text-sm">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
-                <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand text-white p-16 hover:gap-12">
+            <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-200)">
+                <div class="flex flex-wrap items-center gap-16">
+                    <img src="/okpan/card-loupe.svg" width="48" height="48" alt="Loupe logo">
+                    <h3 class="h3">Loupe</h3>
+                </div>
+                <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
+                <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand text-white p-16 hover:gap-12 lg:w-3xs">
                     Discover it
                     <IconArrowUpRight stroke="1.5" class="size-18" />
                 </a>
@@ -67,9 +95,7 @@
 
 
 
-
-
-
+    <!-- About white background (side) -->
     <section class="container mx-auto grid grid-cols-12 gap-16 py-24 lg:py-96 px-16">
         <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
             <h2 class="h2">About the project</h2>
@@ -81,7 +107,7 @@
             <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
                 <img src="/okpan/card-db.svg" width="48" height="48" alt="Digital Benin logo">
                 <h4 class="font-semibold">Digital Benin</h4>
-                <p class="text-sm">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
+                <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
                     Go to the website
                     <IconArrowUpRight stroke="1.5" class="size-18" />
@@ -90,7 +116,7 @@
             <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
                 <img src="/okpan/card-loupe.svg" width="48" height="48" alt="Loupe logo">
                 <h4 class="font-semibold">Loupe</h4>
-                <p class="text-sm">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
+                <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
                     Discover it
                     <IconArrowUpRight stroke="1.5" class="size-18" />
@@ -100,7 +126,113 @@
     </section>
 
 
+
+
+
+
+    <!-- Contacts (dark bg) -->
+    <section class="py-24 lg:py-120 bg-primary-800">
+        <div class="container mx-auto flex flex-col gap-16 px-16">
+            <h2 class="h2 text-white">Contact us</h2>
+            <div class="lg:columns-2 pb:24">
+                <p class="text-primary-100">
+                    Quisque lacus arcu, ornare eget porta id, lobortis a nulla. In tortor nisl, rhoncus sed efficitur sollicitudin, sagittis vel lacus. In quis porta neque. Ut id ante sed urna accumsan auctor. Nulla suscipit pellentesque nibh, id ultricies tortor porta quis. Vestibulum nec augue ut ex hendrerit feugiat. Phasellus ornare tortor a ullamcorper ultrices. Morbi id elementum est. Cras sodales mollis mi id vestibulum.
+                    <br>
+                    Integer varius eros nec pharetra tristique. Nam id dui neque. Sed varius eget urna vel dapibus. Vivamus posuere neque vel massa porta ultrices. Nunc eget ipsum at nisi eleifend rhoncus. Quisque facilisis felis vitae massa posuere, in imperdiet diam semper. Morbi vestibulum hendrerit augue ac congue. Vestibulum imperdiet nisl sed mattis commodo.
+                </p>
+            </div>
+            <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand text-white p-16 gap-8 hover:gap-12 lg:w-3xs">
+                Send us an email
+                <IconMailFast stroke="1.5" class="size-18" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Contacts (light bg) -->
+    <section class="py-24 lg:py-120 bg-primary-100">
+        <div class="container mx-auto flex flex-col gap-16 px-16">
+            <h2 class="h2">Contact us</h2>
+            <div class="lg:columns-2 pb:24">
+                <p class="text-primary-900">
+                    Quisque lacus arcu, ornare eget porta id, lobortis a nulla. In tortor nisl, rhoncus sed efficitur sollicitudin, sagittis vel lacus. In quis porta neque. Ut id ante sed urna accumsan auctor. Nulla suscipit pellentesque nibh, id ultricies tortor porta quis. Vestibulum nec augue ut ex hendrerit feugiat. Phasellus ornare tortor a ullamcorper ultrices. Morbi id elementum est. Cras sodales mollis mi id vestibulum.
+                    <br>
+                    Integer varius eros nec pharetra tristique. Nam id dui neque. Sed varius eget urna vel dapibus. Vivamus posuere neque vel massa porta ultrices. Nunc eget ipsum at nisi eleifend rhoncus. Quisque facilisis felis vitae massa posuere, in imperdiet diam semper. Morbi vestibulum hendrerit augue ac congue. Vestibulum imperdiet nisl sed mattis commodo.
+                </p>
+            </div>
+            <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand bg-primary-600 text-white p-16 gap-8 hover:gap-12 lg:w-3xs">
+                Send us an email
+                <IconMailFast stroke="1.5" class="size-18" />
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Sponsor -->
+    <section class="container mx-auto flex flex-wrap gap-24 lg:gap-48 py-24 lg:py-96 px-16">
+
+        <div class="flex flex-col pt-16 lg:pt-0 gap-16">
+            <p class="text-surface-600 text-sm">With the generous support of</p>
+            <div class="flex gap-24">
+                <img src="/imgs/supp-1.png" width="106" height="80" alt="Evs">
+                <img src="/imgs/supp-2.png" width="307" height="80" alt="Mellon Foundation">
+            </div>
+        </div>
+
+        <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16">
+            <p class="text-surface-600 text-sm">Hosted by</p>
+            <div class="flex gap-24">
+                <img src="/imgs/supp-3.png" width="201" height="80" alt="Markk">
+            </div>
+        </div>
+
+        <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16">
+            <p class="text-surface-600 text-sm">In collaboration with</p>
+            <div class="flex gap-24">
+                <img src="/imgs/supp-4.png" width="114" height="80" alt="Markk">
+                <img src="/imgs/supp-5.png" width="56" height="80" alt="Markk">
+                <img src="/imgs/supp-6.png" width="80" height="80" alt="Markk">
+                <img src="/imgs/supp-7.png" width="137" height="80" alt="Markk">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 </main>
 
 
-<footer class="bg-blue-500 p-64">(footer)</footer>
+<footer class="bg-primary-950 py-48 px-16">
+    <div class="container mx-auto grid grid-cols-12 gap-24">
+
+        <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
+            <div class="flex flex-wrap items-center gap-8">
+                <img src="/brand/logo-okpan.svg" width="40" height="40" alt="Ọkpan logo">
+                <h3 class="h3 text-white">Ọkpan</h3>
+            </div>
+
+            <p class="text-primary-200 text-balance">
+                Ọkpan brings together records of artefacts scattered across museums worldwide, reconnecting them with the communities, knowledge, and histories they were separated from.
+            </p>
+        </div>
+
+        <div class="col-span-12 lg:col-span-3 lg:col-start-9 lg:flex lg:items-end lg:justify-end">
+            <p class="text-primary-200 text-sm">Information in a small size</p>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+    footer{
+        background: linear-gradient(var(--color-primary-800), var(--color-primary-950));
+        /*background: linear-gradient(var(--color-white), var(--color-primary-100));*/
+    }
+</style>
