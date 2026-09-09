@@ -2,6 +2,7 @@
     import { IconChevronDown, IconChartCircles, IconTableImport, IconWorld, IconUsersGroup, IconDatabaseExport } from '@tabler/icons-svelte';
     import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import { slide } from 'svelte/transition';
+    import { base } from '$app/paths';
 
     const features = [
 		{
@@ -55,7 +56,7 @@
     <!-- <div class="col-span-12 lg:col-span-7 sticky top-52 pb-24 bg-surface-50"> -->
     <div class="col-span-12 lg:col-span-7">
         <img 
-            src={`/okpan/${features[parseInt(selected)].imgName}`}
+            src={`${base}/okpan/${features[parseInt(selected)].imgName}`}
             alt={features[parseInt(selected)].title}
         >
     </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { IconX, IconDownload, IconClipboardCopy } from '@tabler/icons-svelte';
+    import { IconX, IconClipboardCopy } from '@tabler/icons-svelte';
     import { Dialog, Portal } from '@skeletonlabs/skeleton-svelte';
 
     const modalAnimation = 'transition transition-discrete opacity-0 translate-y-[100px] starting:data-[state=open]:opacity-0 starting:data-[state=open]:translate-y-[100px] data-[state=open]:opacity-100 data-[state=open]:translate-y-0';

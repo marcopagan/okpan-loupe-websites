@@ -3,13 +3,14 @@
     import { Dialog  } from '@skeletonlabs/skeleton-svelte';
 	import DownloadModal from './DownloadModal.svelte';
 	import MobileModal from './MobileModal.svelte';
+    import { base } from '$app/paths';
 </script>
 
 <section class="container mx-auto px-0 md:px-16">
     <div class="hero h-700 sm:rounded-lg relative overflow-hidden">
 
         <video autoplay disablepictureinpicture loop muted class="w-full h-full absolute object-cover -z-5">
-            <source src="/brand/around.mp4" type="video/mp4" />
+            <source src={`${base}/brand/around.mp4`} type="video/mp4" />
         </video>
 
         <div class="flex flex-col flex-wrap gap-24 text-center justify-center items-center content-center px-16 md:px-48 h-full z-16">
