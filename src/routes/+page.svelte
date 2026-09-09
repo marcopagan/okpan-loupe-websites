@@ -178,25 +178,25 @@
         <div class="flex flex-col pt-16 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">With the generous support of</p>
             <div class="flex flex-col md:flex-row gap-24">
-                <img src={`${base}/okpan/imgs/supp-1.png`} width="106" height="80" alt="Evs" class="h-fit">
-                <img src={`${base}/okpan/imgs/supp-2.png`} width="307" height="80" alt="Mellon Foundation" class="h-fit">
+                <img src={`${base}/imgs/supp-1.png`} width="106" height="80" alt="Evs" class="h-fit">
+                <img src={`${base}/imgs/supp-2.png`} width="307" height="80" alt="Mellon Foundation" class="h-fit">
             </div>
         </div>
 
         <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">Hosted by</p>
             <div class="flex flex-col md:flex-row gap-24">
-                <img src={`${base}/okpan/imgs/supp-3.png`} width="201" height="80" alt="Markk" class="h-fit">
+                <img src={`${base}/imgs/supp-3.png`} width="201" height="80" alt="Markk" class="h-fit">
             </div>
         </div>
 
         <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">In collaboration with</p>
             <div class="flex flex-col md:flex-row gap-24">
-                <img src={`${base}/okpan/imgs/supp-4.png`} width="114" height="80" alt="Markk" class="h-fit">
-                <img src={`${base}/okpan/imgs/supp-5.png`} width="56" height="80" alt="Markk" class="h-fit">
-                <img src={`${base}/okpan/imgs/supp-6.png`} width="80" height="80" alt="Markk" class="h-fit">
-                <img src={`${base}/okpan/imgs/supp-7.png`} width="137" height="80" alt="Markk" class="h-fit">
+                <img src={`${base}/imgs/supp-4.png`} width="114" height="80" alt="Markk" class="h-fit">
+                <img src={`${base}/imgs/supp-5.png`} width="56" height="80" alt="Markk" class="h-fit">
+                <img src={`${base}/imgs/supp-6.png`} width="80" height="80" alt="Markk" class="h-fit">
+                <img src={`${base}/imgs/supp-7.png`} width="137" height="80" alt="Markk" class="h-fit">
             </div>
         </div>
     </section>
@@ -214,7 +214,7 @@
 
         <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
             <div class="flex flex-wrap items-center gap-8">
-                <img src="/brand/logo-okpan.svg" width="40" height="40" alt="Ọkpan logo">
+                <img src={`${base}/brand/logo-okpan.svg`} width="40" height="40" alt="Ọkpan logo">
                 <h3 class="h3">Ọkpan</h3>
             </div>
 
@@ -229,7 +229,7 @@
 
     </div>
 
-    <img src="/imgs/footer-logo-light.svg" width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
+    <img src={`${base}/imgs/footer-logo-light.svg`} width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
 </footer>
 
 
