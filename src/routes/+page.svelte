@@ -176,28 +176,28 @@
     <!-- Sponsor -->
     <section class="container mx-auto flex flex-wrap gap-24 lg:gap-48 py-24 lg:py-96 px-16">
 
-        <div class="flex flex-col pt-16 lg:pt-0 gap-16">
+        <div class="flex flex-col pt-16 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">With the generous support of</p>
-            <div class="flex gap-24">
-                <img src="/imgs/supp-1.png" width="106" height="80" alt="Evs">
-                <img src="/imgs/supp-2.png" width="307" height="80" alt="Mellon Foundation">
+            <div class="flex flex-col md:flex-row gap-24">
+                <img src="/imgs/supp-1.png" width="106" height="80" alt="Evs" class="h-fit">
+                <img src="/imgs/supp-2.png" width="307" height="80" alt="Mellon Foundation" class="h-fit">
             </div>
         </div>
 
-        <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16">
+        <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">Hosted by</p>
-            <div class="flex gap-24">
-                <img src="/imgs/supp-3.png" width="201" height="80" alt="Markk">
+            <div class="flex flex-col md:flex-row gap-24">
+                <img src="/imgs/supp-3.png" width="201" height="80" alt="Markk" class="h-fit">
             </div>
         </div>
 
-        <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16">
+        <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">In collaboration with</p>
-            <div class="flex gap-24">
-                <img src="/imgs/supp-4.png" width="114" height="80" alt="Markk">
-                <img src="/imgs/supp-5.png" width="56" height="80" alt="Markk">
-                <img src="/imgs/supp-6.png" width="80" height="80" alt="Markk">
-                <img src="/imgs/supp-7.png" width="137" height="80" alt="Markk">
+            <div class="flex flex-col md:flex-row gap-24">
+                <img src="/imgs/supp-4.png" width="114" height="80" alt="Markk" class="h-fit">
+                <img src="/imgs/supp-5.png" width="56" height="80" alt="Markk" class="h-fit">
+                <img src="/imgs/supp-6.png" width="80" height="80" alt="Markk" class="h-fit">
+                <img src="/imgs/supp-7.png" width="137" height="80" alt="Markk" class="h-fit">
             </div>
         </div>
     </section>
@@ -209,8 +209,34 @@
 </main>
 
 
-<footer class="bg-primary-950 py-48 px-16">
-    <div class="container mx-auto grid grid-cols-12 gap-24">
+<!-- Footer (light) -->
+<footer class="bg-linear-to-t from-primary-100 to-white py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
+    <div class="container mx-auto grid grid-cols-12 gap-24 z-64 relative">
+
+        <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
+            <div class="flex flex-wrap items-center gap-8">
+                <img src="/brand/logo-okpan.svg" width="40" height="40" alt="Ọkpan logo">
+                <h3 class="h3">Ọkpan</h3>
+            </div>
+
+            <p class="text-surface-600 text-balance">
+                Ọkpan brings together records of artefacts scattered across museums worldwide, reconnecting them with the communities, knowledge, and histories they were separated from.
+            </p>
+        </div>
+
+        <div class="col-span-12 lg:col-span-3 lg:col-start-9 lg:flex lg:items-end lg:justify-end">
+            <p class="text-surface-600 text-sm">Information in a small size</p>
+        </div>
+
+    </div>
+
+    <img src="/imgs/footer-logo-light.svg" width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
+</footer>
+
+
+<!-- Footer (dark) -->
+<footer class="bg-linear-to-t from-primary-950 to-primary-600 py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
+    <div class="container mx-auto grid grid-cols-12 gap-24 z-64 relative">
 
         <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
             <div class="flex flex-wrap items-center gap-8">
@@ -228,11 +254,6 @@
         </div>
 
     </div>
-</footer>
 
-<style>
-    footer{
-        background: linear-gradient(var(--color-primary-800), var(--color-primary-950));
-        /*background: linear-gradient(var(--color-white), var(--color-primary-100));*/
-    }
-</style>
+    <img src="/imgs/footer-logo.svg" width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
+</footer>

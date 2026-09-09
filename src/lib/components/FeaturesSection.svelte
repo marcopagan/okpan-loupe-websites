@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { IconChevronDown } from '@tabler/icons-svelte';
+    import { IconChevronDown, IconChartCircles, IconTableImport, IconWorld, IconUsersGroup, IconDatabaseExport } from '@tabler/icons-svelte';
     import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import { slide } from 'svelte/transition';
 
@@ -9,7 +9,8 @@
 			title: 'Import any kind of data',
 			description:
 				"Bring in artefact records from spreadsheets, JSON files, museum databases exports . Ọkpan adapts to the data you already have, however incomplete or inconsistent it is.",
-            imgName: 'feature0.png'
+            imgName: 'feature0.png',
+			icon: IconTableImport
                 
 		},
 		{
@@ -17,28 +18,32 @@
 			title: 'Connections: situated knowledge, not fixed vocabularies',
 			description:
 				"Standard ontologies and vocabularies are built without the knowledge of the communities objects come from. Connections let you attach Indigenous designations, oral histories, and cultural context directly to a record: knowledge that doesn't need to fit inside someone else's classification system to count.",
-            imgName: 'feature1.png'
+            imgName: 'feature1.png',
+			icon: IconChartCircles
 		},
 		{
 			id: '2',
 			title: 'Build your catalogue, publish it online',
 			description:
 				"Turn imported and enriched records into a structured catalogue, and publish it as a public website others can browse, search, and cite. No separate web project required.",
-            imgName: 'feature2.png'
+            imgName: 'feature2.png',
+			icon: IconWorld
 		},
         {
 			id: '3',
 			title: 'Offline-first, built for collaboration',
 			description:
 				"Work on your catalogue without an internet connection when you need to, then sync and collaborate with partner institutions, researchers, and communities when you're back online.",
-            imgName: 'feature3.png'
+            imgName: 'feature3.png',
+			icon: IconUsersGroup
 		},
         {
 			id: '4',
 			title: 'Publish enriched, open datasets',
 			description:
 				"Share your enriched collection as structured, reusable data, so the knowledge you've gathered can travel beyond your own catalogue and support research elsewhere.",
-            imgName: 'feature4.png'
+            imgName: 'feature4.png',
+			icon: IconDatabaseExport
 		}
 	];
 
@@ -62,8 +67,11 @@
 		    
             <Accordion.Item value={feature.id} class='rounded-lg'>
 			    <h3>
-				    <Accordion.ItemTrigger class="flex items-center justify-between gap-8 p-16 py-24">
-                        {feature.title}
+				    <Accordion.ItemTrigger class="flex items-center gap-12 p-16 lg:py-24 group">
+						<div class="btn p-4 rounded-lg h-fit group-data-[state=open]:preset-filled-brand group-data-[state=open]:text-white">
+							<feature.icon stroke="1.5" class="size-24" />
+						</div>
+                        <p class="w-full lg:text-lg">{feature.title}</p>
                         <Accordion.ItemIndicator class="group">
 						    <IconChevronDown stroke="1.5" class="size-18 transition group-data-[state=open]:rotate-180" />
 					    </Accordion.ItemIndicator>
