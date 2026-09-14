@@ -30,7 +30,7 @@
         </div>
     </section>
 
-    <!-- What is it (full video)
+    <!-- What is it (full video) -->
     <section class="container mx-auto grid grid-cols-12 gap-16 py-24 lg:py-48 px-16">
         <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
             <h2 class="h2">What is it?</h2>
@@ -41,7 +41,7 @@
         <div class="col-span-12 lg:col-span-7 flex flex-wrap items-center justify-center rounded-lg">
             <iframe class="rounded-xl shadow-xl aspect-video w-full h-auto" width="853" height="480" src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=9aYDBlmUxg4YmG-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </section> -->
+    </section>
 
 
 
@@ -56,7 +56,7 @@
 
 
 
-    <!-- About colored background (center)
+    <!-- About colored background (center) -->
     <section class="py-24 lg:py-120 bg-primary-100">
         <div class="container mx-auto gap-32 lg:gap-48 px-16 py-16 lg:py-0 flex flex-col flex-wrap items-center">
         <div class="flex justify-center flex-col gap-16 lg:w-lg text-center">
@@ -90,7 +90,7 @@
             </div>
         </div>
         </div>
-    </section> -->
+    </section>
 
 
 
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <!-- Contacts (light bg)
+    <!-- Contacts (light bg) -->
     <section class="py-24 lg:py-120 bg-primary-100">
         <div class="container mx-auto flex flex-col gap-16 px-16">
             <h2 class="h2">Contact us</h2>
@@ -163,7 +163,7 @@
                 <IconMailFast stroke="1.5" class="size-18" />
             </a>
         </div>
-    </section> -->
+    </section>
 
 
 
@@ -233,7 +233,7 @@
 </footer>
 
 
-<!-- Footer (dark)
+<!-- Footer (dark) -->
 <footer class="bg-linear-to-t from-primary-950 to-primary-600 py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
     <div class="container mx-auto grid grid-cols-12 gap-24 z-64 relative">
 
@@ -255,4 +255,4 @@
     </div>
 
     <img src={`${base}/brand/footer-logo.svg`} width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
-</footer> -->
+</footer>
