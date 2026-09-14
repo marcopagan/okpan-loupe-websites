@@ -10,10 +10,10 @@
     <div class="hero h-700 sm:rounded-lg relative overflow-hidden">
 
         <video autoplay disablepictureinpicture loop muted class="w-full h-full absolute object-cover -z-5">
-            <source src={`${base}/brand/around.mp4`} type="video/mp4" />
+            <source src={`${base}/brand/hero-vid.mp4`} type="video/mp4" />
         </video>
 
-        <div class="flex flex-col flex-wrap gap-24 text-center justify-center items-center content-center px-16 md:px-48 h-full z-16">
+        <div class="flex flex-col flex-wrap gap-24 text-center justify-center items-center content-center px-16 md:px-48 h-full z-8">
             <h3 class="h1 leading-[1]">A tool for reconnecting dispersed collections</h3>
             <p>Ọkpan brings together records of artefacts scattered across museums worldwide, reconnecting them with the communities, knowledge, and histories they were separated from.</p>
 

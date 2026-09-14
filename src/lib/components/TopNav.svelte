@@ -1,14 +1,19 @@
 <script lang="ts">
     import { IconBook2 } from '@tabler/icons-svelte';
     import { base } from '$app/paths';
+    let body: HTMLBodyElement;
+
+    $effect(() => {
+        body = document.getElementsByTagName("body")[0];
+    });
 </script>
 
-<header class="sticky top-0">
+<header class="sticky top-0 z-16">
     <div class="container mx-auto flex flex-wrap content-end justify-between px-16 py-8">
-        <div class="flex gap-8">
-            <img src={`${base}/brand/logo-okpan.svg`} width="36" height="36" alt="Ọkpan logo"/>
+        <button class="flex gap-8" onclick={() => body.scrollIntoView()}>
+            <img src={`${base}/brand/icon-logo.svg`} width="36" height="36" alt="Ọkpan logo"/>
             <h1 class="h2">Ọkpan</h1>
-        </div>
+        </button>
 	
 	    <a href="https://wikipedia.org" type="button" class="btn hover:preset-tonal gap-8">
             User Guide <IconBook2 class="size-18" stroke='2'/>

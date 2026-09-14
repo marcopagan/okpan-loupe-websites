@@ -53,11 +53,11 @@
 
 
 <section class="container mx-auto py-48 px-16 grid grid-cols-12 gap-16">
-    <!-- <div class="col-span-12 lg:col-span-7 sticky top-52 pb-24 bg-surface-50"> -->
     <div class="col-span-12 lg:col-span-7">
         <img 
-            src={`${base}/okpan/${features[parseInt(selected)].imgName}`}
+            src={`${base}/imgs/${features[parseInt(selected)].imgName}`}
             alt={features[parseInt(selected)].title}
+			class="hidden lg:inline"
         >
     </div>
 
@@ -72,7 +72,7 @@
 						<div class="btn p-4 rounded-lg h-fit group-data-[state=open]:preset-filled-brand group-data-[state=open]:text-white">
 							<feature.icon stroke="1.5" class="size-24" />
 						</div>
-                        <p class="w-full lg:text-lg">{feature.title}</p>
+						<p class="w-full h4 leading-[1.2] tracking-[-0.01em]">{feature.title}</p>
                         <Accordion.ItemIndicator class="group">
 						    <IconChevronDown stroke="1.5" class="size-18 transition group-data-[state=open]:rotate-180" />
 					    </Accordion.ItemIndicator>
@@ -83,7 +83,11 @@
                     {#snippet element(attributes)}
 					    {#if !attributes.hidden}
 						    <div {...attributes} transition:slide={{ duration: 150 }}>
-							    {feature.description}
+								<img 
+									class="pb-16 lg:hidden"
+            						src={`${base}/imgs/${feature.imgName}`}
+            						alt={feature.title} />
+							    <p>{feature.description}</p>
 						    </div>
 					    {/if}
 				    {/snippet}
