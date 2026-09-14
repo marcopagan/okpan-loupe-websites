@@ -14,7 +14,7 @@ export default defineConfig({
 			},
 			adapter: adapter(),
 			paths: {
-        		base: '/okpan-website'
+        		base: '/okpan-loupe-websites'
       		}
 		})
 	]
