@@ -10,7 +10,7 @@
 
 <TopNav />
 
-<main class="grid grid-cols-1 my-8 lg:my-24">
+<main class="grid grid-cols-1 my-0 lg:my-16">
     
 
 
@@ -68,7 +68,7 @@
         <div class="col-span-12 lg:col-span-7 flex flex-col md:flex-row gap-16">
             <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-200)">
                 <div class="flex flex-wrap items-center gap-16">
-                    <img src={`${base}/okpan/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
+                    <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
                     <h3 class="h3">Digital Benin</h3>
                 </div>
                 <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
@@ -79,7 +79,7 @@
             </div>
             <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-200)">
                 <div class="flex flex-wrap items-center gap-16">
-                    <img src={`${base}/okpan/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
+                    <img src={`${base}/imgs/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
                     <h3 class="h3">Loupe</h3>
                 </div>
                 <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
@@ -104,7 +104,7 @@
         </div>
         <div class="col-span-12 lg:col-span-7 flex flex-col md:flex-row gap-16">
             <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
-                <img src={`${base}/okpan/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
+                <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
                 <h4 class="font-semibold">Digital Benin</h4>
                 <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
@@ -113,7 +113,7 @@
                 </a>
             </div>
             <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
-                <img src={`${base}/okpan/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
+                <img src={`${base}/imgs/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
                 <h4 class="font-semibold">Loupe</h4>
                 <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
@@ -177,7 +177,7 @@
 
         <div class="flex flex-col pt-16 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">With the generous support of</p>
-            <div class="flex flex-col md:flex-row gap-24">
+            <div class="flex flex-row flex-wrap gap-24">
                 <img src={`${base}/imgs/supp-1.png`} width="106" height="80" alt="Evs" class="h-fit">
                 <img src={`${base}/imgs/supp-2.png`} width="307" height="80" alt="Mellon Foundation" class="h-fit">
             </div>
@@ -185,14 +185,14 @@
 
         <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">Hosted by</p>
-            <div class="flex flex-col md:flex-row gap-24">
+            <div class="flex flex-row flex-wrap gap-24">
                 <img src={`${base}/imgs/supp-3.png`} width="201" height="80" alt="Markk" class="h-fit">
             </div>
         </div>
 
         <div class="flex flex-col pt-16 border-t-[1.5px] md:border-t-0 border-surface-200 lg:pt-0 gap-16 w-full lg:w-auto">
             <p class="text-surface-600 text-sm">In collaboration with</p>
-            <div class="flex flex-col md:flex-row gap-24">
+            <div class="flex flex-row flex-wrap gap-24">
                 <img src={`${base}/imgs/supp-4.png`} width="114" height="80" alt="Markk" class="h-fit">
                 <img src={`${base}/imgs/supp-5.png`} width="56" height="80" alt="Markk" class="h-fit">
                 <img src={`${base}/imgs/supp-6.png`} width="80" height="80" alt="Markk" class="h-fit">
@@ -214,7 +214,7 @@
 
         <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
             <div class="flex flex-wrap items-center gap-8">
-                <img src={`${base}/brand/logo-okpan.svg`} width="40" height="40" alt="Ọkpan logo">
+                <img src={`${base}/brand/icon-logo.svg`} width="40" height="40" alt="Ọkpan logo">
                 <h3 class="h3">Ọkpan</h3>
             </div>
 
@@ -229,7 +229,7 @@
 
     </div>
 
-    <img src={`${base}/imgs/footer-logo-light.svg`} width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
+    <img src={`${base}/brand/footer-logo-light.svg`} width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
 </footer>
 
 
@@ -239,7 +239,7 @@
 
         <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
             <div class="flex flex-wrap items-center gap-8">
-                <img src={`${base}/brand/logo-okpan.svg`} width="40" height="40" alt="Ọkpan logo">
+                <img src={`${base}/brand/icon-logo.svg`} width="40" height="40" alt="Ọkpan logo">
                 <h3 class="h3 text-white">Ọkpan</h3>
             </div>
 
@@ -254,5 +254,5 @@
 
     </div>
 
-    <img src={`${base}/imgs/footer-logo.svg`} width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
+    <img src={`${base}/brand/footer-logo.svg`} width="409" height="400" alt="Ọkpan footer logo" class="logo-footer absolute bottom-[-100px] md:bottom-[-200px] right-[15vw] md:right-[25%] w-[70vw] md:w-[400px] h-auto z-32"/>
 </footer>
